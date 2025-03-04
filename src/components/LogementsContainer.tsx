@@ -4,6 +4,7 @@ import LogementsCard from './LogementsCard'
 
 function LogementsContainer () {
    
+    //Affichage des cartes de logements sur la page d'accueil
     return (
         <div className='logementsContent'>
         {

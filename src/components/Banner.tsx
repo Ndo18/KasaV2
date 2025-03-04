@@ -1,6 +1,8 @@
 import { ReactNode } from 'react'
 // import './stylesComponents/Banner.css'
 
+//Type props Children
+
 type childrenType = {
     children: ReactNode,
 }

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 // import "./stylesComponents/LogementsCard.css"
 
+//Type des props
 type LogementsCardType = {
     id: string,
     titre: string,
@@ -8,7 +9,7 @@ type LogementsCardType = {
 }
 
 function LogementsCard({id, titre, cover}: LogementsCardType) {
-
+    //Liens vers les pages détaillées des logements
     return (
         <div className="logementcard" key={ id }>
             <Link className="logementlink" to={`/Fiche-logement/${id}`} state={{logementid : id}}>
