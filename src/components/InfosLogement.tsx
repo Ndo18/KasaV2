@@ -1,15 +1,22 @@
 // import './stylesComponents/InfosLogement.css'
 
-function InfosLogement(props) {
+type InfosLogementProps = {
+    titre: string,
+    location: string,
+    name: string,
+    photoprofil: string
+}
+
+function InfosLogement({titre, location, name, photoprofil}: InfosLogementProps) {
     return (
         <section>
             <div className="infoslogement">
-                <h2>{props.titre}</h2>
-                <p>{props.location}</p>
+                <h2>{titre}</h2>
+                <p>{location}</p>
             </div>
             <div className="infohost">
-                <div>{props.name}</div>
-                <img src = {props.photoprofil} alt="Profile Face" />
+                <div>{name}</div>
+                <img src = {photoprofil} alt="Profile Face" />
             </div>
         </section>
     )

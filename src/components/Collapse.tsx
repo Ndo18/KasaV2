@@ -1,7 +1,13 @@
 import { useState } from "react"
 // import './stylesComponents/Collapse.css'
 
-function Collapse ({id, titre, description}) {
+type CollapseProps = {
+    id?: string,
+    titre: string,
+    description: React.ReactNode
+}
+
+function Collapse ({id, titre, description}: CollapseProps) {
     
 const [isOpen, setisOpen] = useState(false)
 

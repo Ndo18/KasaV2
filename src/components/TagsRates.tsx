@@ -1,17 +1,26 @@
 // import './stylesComponents/TagsRates.css'
 
-function TagsRates(props) {
+import { ReactNode } from "react"
+
+type TagsRatesProps = {
+    tags: ReactNode,
+    rating: ReactNode,
+    hostname: string,
+    hostpicture: string
+}
+
+function TagsRates({tags, rating, hostname, hostpicture}: TagsRatesProps) {
     return(
     <div className='tagsrates'>
         <div className='tags'>
-            {props.tags}
+            {tags}
         </div>
         <div className="starsnhost">
         <div className="ratestars">
-            {props.rating}
+            {rating}
         <div className='onlymobileprofil'>
-            <div>{props.hostname}</div>
-            <img src={props.hostpicture} alt="" />
+            <div>{hostname}</div>
+            <img src={hostpicture} alt="" />
         </div>
         </div>
         </div>
