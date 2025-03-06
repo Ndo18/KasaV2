@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import Noslogements from '../Data/logements.json'
+import Noslogements from '../data/logements.json'
 import { useParams } from 'react-router-dom'
 import InfosLogement from './InfosLogement'
 import TagsRates from './TagsRates'
 import Slideshow from './Slideshow'
 import Collapse from './Collapse'
-import Error from '../components/pages/Error'
+import Error from '../pages/Error'
+import { LogementsType } from '../TypeScript/LogementsType'
 
 function FicheLogements() {
   const { id } = useParams()
-  const [logementsfilter, setLogementsFilter] = useState([])
+  const [logementsfilter, setLogementsFilter] = useState<LogementsType>([])
 
   useEffect(() => {
     const logementsfilter = Noslogements.filter(logement => logement.id === id)
@@ -45,7 +46,8 @@ function FicheLogements() {
           ))}
         </>}
         rating = {ratingstars.map((num) => (
-            <i key={num} className={logement.rating >= num ? "fa-solid fa-star colorate" : "fa-solid fa-star"}></i>
+            <i key={num} className={Number(logement.rating) >= num ? "fa-solid fa-star colorate" : "fa-solid fa-star"}
+></i>
         ))}
         hostname = {logement.host.name}
         hostpicture = {logement.host.picture}

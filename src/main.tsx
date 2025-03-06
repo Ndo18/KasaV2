@@ -6,6 +6,8 @@ import './index.css'
 import Header from './components/Header.tsx'
 import Footer from './components/Footer.tsx'
 import Homepage from './pages/Homepage.tsx'
+import Error from './pages/Error.tsx'
+// import FicheLogements from './components/FicheLogements.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,6 +16,7 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path='/' element={<Homepage />} />
         {/* <Route path='/Fiche-logement/:id' element={<FicheLogements />} /> */}
+        <Route path="*" element={<Error />} />
       </Routes>
     {/* <App /> */}
       <Footer />
