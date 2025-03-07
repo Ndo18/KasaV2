@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import './index.css'
 import Header from './components/Header.tsx'
 import Footer from './components/Footer.tsx'
@@ -11,7 +11,7 @@ import Apropos from './pages/Apropos.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Router>
+    <Router basename='/KasaV2'>
       <Header />
       <Routes>
         <Route path='/' element={<Homepage />} />
