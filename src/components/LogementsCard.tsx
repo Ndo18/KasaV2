@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-// import "./stylesComponents/LogementsCard.css"
+import "../style/LogementsCard.css"
 
 //Type des props
 type LogementsCardType = {

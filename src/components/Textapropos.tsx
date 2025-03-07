@@ -1,6 +1,6 @@
 import DescriptionsApropos from "../data/textapropos.json"
 import Collapse from "./Collapse"
-// import '../styles/Apropos.css'
+import '../style/Apropos.css'
 
 function Textapropos (){
     

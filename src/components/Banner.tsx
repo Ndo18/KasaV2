@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-// import './stylesComponents/Banner.css'
+import '../style/Banner.css'
 
 //Type props Children
 

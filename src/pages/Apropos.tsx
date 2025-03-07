@@ -1,5 +1,6 @@
 import Banner from "../components/Banner"
 import Textapropos from "../components/Textapropos"
+import '../style/Apropos.css'
 
 function Apropos() {
     return (

@@ -1,5 +1,5 @@
 import { useState } from "react"
-// import './stylesComponents/Collapse.css'
+import '../style/Collapse.css'
 
 type CollapseProps = {
     id?: string,

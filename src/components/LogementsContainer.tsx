@@ -1,6 +1,6 @@
 import Noslogements from '../data/logements.json'
 import LogementsCard from './LogementsCard'
-// import './stylesComponents/LogementsContainer.css'
+import '../style/LogementsContainer.css'
 
 function LogementsContainer () {
    

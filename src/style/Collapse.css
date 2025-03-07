@@ -1,0 +1,67 @@
+.monBlock {
+  margin: 10px 0 50px 0;
+  width: 48%;
+}
+.monBlock .listedescription {
+  display: flex;
+  align-items: center;
+  background-color: #FF6060;
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  cursor: pointer;
+}
+.monBlock .listedescription h3 {
+  margin-left: 20px;
+  color: white;
+  width: 100%;
+}
+.monBlock .listedescription .fa-chevron-up {
+  color: white;
+  margin-right: 20px;
+  font-size: 25px;
+}
+.monBlock .descriptiontext {
+  color: #FF6060;
+  background-color: #F6F6F6;
+  padding: 20px;
+}
+.monBlock .descriptiontext ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+@keyframes openRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes closeRotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.monBlock .opened i {
+  animation: openRotate 0.5s ease forwards;
+}
+.monBlock .closed i {
+  animation: closeRotate 0.5s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .collapseinfoslogement {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0 40px 0;
+  }
+  .collapseinfoslogement .monBlock {
+    width: 100%;
+    margin: 10px 0 20px 0;
+  }
+}/*# sourceMappingURL=Collapse.css.map */

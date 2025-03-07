@@ -1,4 +1,4 @@
-// import './stylesComponents/TagsRates.css'
+import '../style/TagsRates.css'
 
 import { ReactNode } from "react"
 

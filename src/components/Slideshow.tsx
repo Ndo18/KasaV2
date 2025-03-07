@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import './stylesComponents/Slideshow.css'
+import '../style/Slideshow.css'
 
 type PictureType = {
     pictures: string[]
@@ -18,8 +18,8 @@ function Slideshow({ pictures }: PictureType) {
 {
     totalSlides > 1 && (
         <div className="btn_diapo">
-            {/* <img src={`${process.env.PUBLIC_URL}/Arrow_previews.png`} alt="" onClick={() => setSlides ((slides - 1 + totalSlides) % totalSlides)} className="arrow_prev"></img>
-            <img src={`${process.env.PUBLIC_URL}/Arrow_next.png`} alt="" onClick={() => setSlides ((slides + 1) % totalSlides)} className="arrow_next"></img> */}
+            <img src={`/Arrow_previews.png`} alt="" onClick={() => setSlides ((slides - 1 + totalSlides) % totalSlides)} className="arrow_prev"></img>
+            <img src={`/Arrow_next.png`} alt="" onClick={() => setSlides ((slides + 1) % totalSlides)} className="arrow_next"></img>
         </div>
     )
 }

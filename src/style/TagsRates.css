@@ -1,0 +1,68 @@
+.tagsrates {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px 0px 20px;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.tags p {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #FF6060;
+  padding: 2px 30px 2px 30px;
+  border-radius: 5px;
+}
+
+.fa-star {
+  color: #E3E3E3;
+}
+
+.colorate {
+  color: #FF6060;
+}
+
+.onlymobileprofil {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .tagsrates {
+    flex-direction: column;
+  }
+  .tagsrates .infohost {
+    display: block;
+  }
+  .tagsrates .tags {
+    margin: 10px 0 10px 0;
+  }
+  .tagsrates .tags p {
+    font-size: 10px;
+    align-items: center;
+    padding: 3px 10px 3px 10px;
+  }
+  .tagsrates .ratestars {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin: 5px 0 20px 0;
+  }
+  .tagsrates .ratestars .onlymobileprofil {
+    display: flex;
+    margin-left: auto;
+  }
+  .tagsrates .ratestars .onlymobileprofil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .tagsrates .ratestars .onlymobileprofil div {
+    margin: 0px 10px 0 46px;
+    text-align: right;
+    color: #FF6060;
+  }
+}/*# sourceMappingURL=TagsRates.css.map */

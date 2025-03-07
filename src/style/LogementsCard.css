@@ -1,0 +1,50 @@
+.logementcard {
+  width: 30%;
+  display: flex;
+  margin-bottom: 45px;
+  position: relative;
+}
+.logementcard .logementlink {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  width: 100%;
+}
+.logementcard .logementlink img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.logementcard .logementlink span {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-image: linear-gradient(0deg, #FF6060, #FF6060, #FF6060, #833131, transparent);
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  height: 50px;
+}
+.logementcard .logementlink span p {
+  margin: auto;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .logementcard {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .logementcard .logementlink img {
+    height: 200px;
+  }
+  .logementcard .logementlink span {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  .logementcard .logementlink span p {
+    margin: 10px;
+    padding: 0;
+  }
+}/*# sourceMappingURL=LogementsCard.css.map */

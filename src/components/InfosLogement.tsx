@@ -1,4 +1,4 @@
-// import './stylesComponents/InfosLogement.css'
+import '../style/InfosLogement.css'
 
 type InfosLogementProps = {
     titre: string,
