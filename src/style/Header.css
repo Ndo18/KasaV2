@@ -5,16 +5,19 @@
   width: 100%;
 }
 .header nav img {
+  /* width: 15%; */
   margin-left: 50px;
 }
 .header ul {
   display: flex;
+  padding: 0;
   gap: 20px;
   list-style: none;
   margin-right: 50px;
   font-size: 20px;
 }
 .header a {
+  width: 50%;
   text-decoration: none;
   color: #FF6060;
 }
@@ -32,7 +35,7 @@
   }
   .header nav img {
     margin: 0 0 0 20px;
-    width: 30%;
+    width: 50%;
   }
   .header ul {
     margin: 0 20px 0 0;

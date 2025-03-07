@@ -6,7 +6,7 @@ import '../style/Header.css'
         return (
         <div className="header">
             <nav>
-                <NavLink to="/"><img src={'/logokasa.png'} alt='Logo Kasa' className='logokasa' /></NavLink>
+                <NavLink to="/"><img src={'logokasa.png'} alt='Logo Kasa' className='logokasa' /></NavLink>
                 <ul>
                     <li><NavLink to="/">Accueil</NavLink></li>
                     <li><NavLink to="/Apropos">À propos</NavLink></li>

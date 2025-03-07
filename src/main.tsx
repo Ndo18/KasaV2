@@ -11,7 +11,7 @@ import Apropos from './pages/Apropos.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Router basename='/KasaV2'>
+    <Router>
       <Header />
       <Routes>
         <Route path='/' element={<Homepage />} />
